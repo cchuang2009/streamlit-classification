@@ -22,7 +22,7 @@ features = [height,weight]
 
 if st.button('Predict'):
     input_data=pd.DataFrame({'身高':[height],'體重':[weight]})
-    result = model.predict(final_features)[0]
+    result = model.predict(input_data)[0]
     #result=prediction=predict_model(model,data=input_data)['prediction_label'][0]
     #rlt=prediction=predict_model(model,data=input_data)['prediction_label']
     #st.write(rlt)
