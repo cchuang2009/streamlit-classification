@@ -1,9 +1,9 @@
 # >  streamlit run app.py
 # ToDo: model predict not completed
 
-#import streamlit as st
+import streamlit as st
 
-import pandas as pd
+#import pandas as pd
 
 from pycaret.classification import load_model, predict_model
 
