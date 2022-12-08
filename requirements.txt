@@ -1,5 +1,5 @@
-streamlit==1.14.0
+streamlit>=1.15.0
 numpy==1.22.4
 pandas==1.4.4
-pycaret==3.0.0rc4
+pycaret>=3.0.0rc4
 
