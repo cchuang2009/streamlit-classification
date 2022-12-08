@@ -3,7 +3,7 @@
 
 import streamlit as st
 
-#import pandas as pd
+import pandas as pd
 
 from pycaret.classification import load_model, predict_model
 
