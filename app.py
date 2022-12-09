@@ -21,7 +21,7 @@ features = [height,weight]
 #final_features = np.array(features).reshape(1, -1)
 
 if st.button('Predict'):
-    input_data=pd.DataFrame({'身高':[height],'體重':[weight]})
+    input_data=pd.DataFrame({'height':[height],'Weight':[weight]})
     result = model.predict(input_data)[0]
     #result=prediction=predict_model(model,data=input_data)['prediction_label'][0]
     #rlt=prediction=predict_model(model,data=input_data)['prediction_label']
