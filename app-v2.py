@@ -18,9 +18,8 @@ features = [height,weight]
 # guesss if clicked, 開始預測
 if st.button('Predict'):
     input_data=pd.DataFrame({'Height':[height],'Weight':[weight]})
-    model=joblib.load("2022_12_8_reg.pkl")
-    st.write(model)
-    result = 0#model.predict(input_data)[0]
+    #model=joblib.load("2022_12_8_reg.pkl")
+    result = model.predict(input_data)[0]
     # convert to classification, 將資料轉為類別
     if result<=0.5:
        gender='女'
