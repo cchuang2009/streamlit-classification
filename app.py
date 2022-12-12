@@ -15,11 +15,8 @@ st.subheader('然後讓我猜測你的性別')
 weight = st.slider('體重',min_value=40, max_value=100, value=50,step=1)
 height = st.slider('身高',min_value=140, max_value=200, value=160,step=1)
 
-features = [height,weight]
 # guesss if clicked, 開始預測
 if st.button('Predict'):
-    #input_data=pd.DataFrame({'Height':[height],'Weight':[weight]})
-    #model=joblib.load("2022_12_8_reg.pkl")i
     BMI=weight/weight**2*10000
     input_data=pd.DataFrame({'Height':[height],'Weight':[weight],'BMI':[BMI]})
     prediction = model.predict(input_data)
