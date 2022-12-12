@@ -5,3 +5,11 @@ This is a simple streamlit app for surpervised model: Gender Guess. The model wa
  and deployed directly on [streamlit official site](http://share.streamlit.io).
 
 This app was made by less-code AotoML Pycaret. Though guessing is a classical surpervized learning, this app, **app-v2.py**, was created by regression model but not classification model, due to the the confliction between pycaret.classification and scikit-learn. 
+
+Note
+---
+Last conclusion is not right, the deployment can not be run because of "decision-trrr" not worked but "catboost" does!
+Run catboost deploy by the following:
+```
+> streamlit run app-v2.py
+```
