@@ -115,7 +115,7 @@ final_features = np.array(features).reshape(1, -1)
 
 if st.button('Predict'):
     prediction = model.predict(final_features)
-    gender=model1.predict(np.array([[60,170]])
+    gender=      model1.predict(np.array([[60,170]]))
     st.balloons()
     #st.success(f'Your predicted price of the laptop is {round(prediction[0],3)}')
     #st.success(f'Predicted Price of the Laptop is about NT$ {final_features}')
