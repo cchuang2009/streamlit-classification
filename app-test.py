@@ -12,7 +12,7 @@ st.title('Laptop Prices Predictor ')
 
 #model = joblib.load('deployment_20221101.pkl')
 model = load_model('deployment_20221101_1')
-model1=load_model("2022_12_8_reg.pkl")
+model1=load_model("2022_12_8_reg")
 
 st.markdown("## 手提電腦估價")
 st.subheader('Laptop Details:')
